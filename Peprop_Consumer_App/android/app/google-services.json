@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "651718195589",
+    "project_id": "peprop-75493",
+    "storage_bucket": "peprop-75493.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651718195589:android:efd66068ca90af405becec",
+        "android_client_info": {
+          "package_name": "com.dasv.peprop_consumer_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651718195589-vvce0f5ke8evu73l99fgnopuvedjvbaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlYP-4H5NW7scNrgMa8WY7NDNpmbB90ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651718195589-vvce0f5ke8evu73l99fgnopuvedjvbaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651718195589:android:062eb98d5f0cab725becec",
+        "android_client_info": {
+          "package_name": "com.dasv.pepropconsumer.peprop_consumer_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651718195589-vvce0f5ke8evu73l99fgnopuvedjvbaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlYP-4H5NW7scNrgMa8WY7NDNpmbB90ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651718195589-vvce0f5ke8evu73l99fgnopuvedjvbaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651718195589:android:8311dbd179c5f1635becec",
+        "android_client_info": {
+          "package_name": "com.peprop.channelpartner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651718195589-vvce0f5ke8evu73l99fgnopuvedjvbaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlYP-4H5NW7scNrgMa8WY7NDNpmbB90ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651718195589-vvce0f5ke8evu73l99fgnopuvedjvbaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651718195589:android:b64dc43e95ca690b5becec",
+        "android_client_info": {
+          "package_name": "com.peprop.developer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651718195589-vvce0f5ke8evu73l99fgnopuvedjvbaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlYP-4H5NW7scNrgMa8WY7NDNpmbB90ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651718195589-vvce0f5ke8evu73l99fgnopuvedjvbaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

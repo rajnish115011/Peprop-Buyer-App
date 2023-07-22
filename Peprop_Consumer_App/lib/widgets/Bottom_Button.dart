@@ -1,0 +1,95 @@
+
+
+
+import 'package:flutter/material.dart';
+import 'package:peprop_consumer_app/Color/ColorFile.dart';
+import 'package:peprop_consumer_app/Utils/AppUtils.dart';
+import 'package:peprop_consumer_app/wish_list/Styles.dart';
+
+class Bottom_Button extends StatelessWidget{
+
+  Function(int) onclick;
+  String title="";
+  Bottom_Button(String title,{required this.onclick}){
+    this.title=title;
+  }
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return  BottomAppBar(
+      child:
+
+      new Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Expanded(child: InkWell(
+            onTap: (){
+             onclick(0);
+            },
+
+            child: new Container(
+                alignment: Alignment.center,
+                decoration: new BoxDecoration(borderRadius: new BorderRadius.circular(10), color: ColorFile.app_color,),
+                margin: EdgeInsets.all(10),
+                height: 60,
+                child:new Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                  new Text(title,style: Styles().styles_medium(13, ColorFile.white),),
+                  new SizedBox(width: 5,),
+                  new Icon(Icons.arrow_forward,color: ColorFile.white,)
+                ],)
+
+            ),)),
+        ],
+      ),
+    );
+
+  }
+
+}
+
+
+class Cofirm_Button extends StatelessWidget{
+
+  Function(int) onclick;
+  String title="";
+  Cofirm_Button(String title,{required this.onclick}){
+    this.title=title;
+  }
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return  BottomAppBar(
+      child:
+
+      new Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Expanded(child: InkWell(
+            onTap: (){
+              onclick(0);
+            },
+
+            child: new Container(
+                alignment: Alignment.center,
+                decoration: new BoxDecoration(borderRadius: new BorderRadius.circular(10), color: ColorFile.greens,),
+                margin: EdgeInsets.all(10),
+                height: 60,
+                child:new Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    new Text(title,style: Styles().styles_medium(15, ColorFile.white),),
+
+                  ],)
+
+            ),)),
+        ],
+      ),
+    );
+
+  }
+
+}
