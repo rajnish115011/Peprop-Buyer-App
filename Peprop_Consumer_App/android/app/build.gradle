@@ -1,0 +1,74 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+apply plugin: 'com.android.application'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+android {
+    compileSdkVersion 33
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.dasv.peprop_consumer_app"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 10
+        versionName "10.0.0"
+    }
+
+    buildTypes {
+        lintOptions {
+            checkReleaseBuilds false
+        }
+        release {
+            shrinkResources false
+            crunchPngs false
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:29.0.1')
+    implementation 'com.google.firebase:firebase-analytics'
+
+   implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation("androidx.core:core:1.9.0")
+//    implementation("androidx.appcompat:appcompat:1.4.0")
+//    implementation("androidx.lifecycle:lifecycle-process:2.5.1")
+//    implementation "com.moengage:moe-android-sdk:$sdkVersion"
+
+
+    implementation 'androidx.multidex:multidex:2.0.1'  //with androidx libraries
+    //implementation 'com.android.support:multidex:1.0.3'  //with support libraries
+
+}
+apply plugin: 'com.google.gms.google-services'
